@@ -1,0 +1,24 @@
+{
+  "assistant_name": "ReEarth Local Compliance Assistant",
+  "runtime": "LM Studio local server",
+  "interface": "Open WebUI",
+  "base_url_host": "http://localhost:1234/v1",
+  "base_url_docker": "http://host.docker.internal:1234/v1",
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "max_tokens": 900,
+  "knowledge_file": "knowledge-base/reearth-local-context.md",
+  "system_prompt_file": "system-prompt.md",
+  "human_escalation_required_for": [
+    "CPCB notice",
+    "audit dispute",
+    "suspected fake certificate",
+    "certificate revocation",
+    "legal interpretation",
+    "penalty question",
+    "regulatory guarantee",
+    "payment dispute",
+    "custom ERP integration promise",
+    "recycler fraud or capacity anomaly"
+  ]
+}
